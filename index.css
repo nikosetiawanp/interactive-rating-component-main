@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass";
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-image: linear-gradient(
+    to bottom,
+    hsla(213, 19%, 18%, 70%),
+    hsla(213, 19%, 18%, 40%)
+  );
+  width: 325px;
+  height: 355px;
+  border-radius: 15px;
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.card p {
+  color: hsla(216, 12%, 54%, 70%);
+  font-size: 14px;
+  font-weight: 400;
+}
+/* RATING */
+.card img,
+.rating button {
+  color: white;
+  background-color: hsla(213, 19%, 18%, 80%);
+  padding: 0.8rem;
+
+  border-radius: 100%;
+  border: none;
+
+  height: 40px;
+  width: 40px;
+}
+
+.rating button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  cursor: pointer;
+}
+.rating button:active {
+  background-color: hsla(216, 12%, 54%, 70100%);
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* BUTTON */
+button.submit {
+  background-color: hsl(25, 97%, 53%);
+
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.1rem;
+
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  min-height: 45px;
+}
+
+button.submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+/* THANK YOU */
